@@ -92,6 +92,7 @@ export default function JsonTreeViewer({ data, error }: JsonTreeViewerProps) {
 
   const treeModel = useMemo(() => {
     if (error) return null;
+    if (!data) return null;
     return buildJsonTreeNode(data, 0, true, 1, "root");
   }, [data, error]);
 

@@ -19,12 +19,18 @@ function App() {
   };
 
   return (
-    <div className='mainContainer'>
-      <div className="rawTextEditor">
-        <RawTextEditor text={raw} onRawTextChange={(input: string) => { setRaw(input); handleParse(input); }}  />
+    <div className='main'>
+      <div className='titleContainer'>
+        <h1 className='title'>JSON-One</h1>
+        <span className='subtitle'>Made for JSON by Jason ❤️</span>
       </div>
-      <div className="resultViewer">
-        <JsonTreeViewer data={json} error={error} />
+      <div className="contentContainer">
+        <div className="rawTextEditor">
+          <RawTextEditor text={raw} onRawTextChange={(input: string) => { setRaw(input); handleParse(input); }}  />
+        </div>
+        <div className="resultViewer">
+          <JsonTreeViewer data={json} error={error} />
+        </div>
       </div>
     </div>
   )
