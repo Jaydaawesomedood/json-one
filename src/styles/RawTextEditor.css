@@ -1,0 +1,41 @@
+.input-area {
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+}
+
+.line-numbers::-webkit-scrollbar {
+  display: none;
+}
+
+.line-number {
+  height: 22px;
+  line-height: 22px;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+.json-input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  color: #d6dbe6;
+  resize: none;
+  outline: none;
+  padding: 10px 12px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  line-height: 22px;
+  caret-color: #7eb8f7;
+  white-space: pre;
+  tab-size: 2;
+}
+
+.json-input::placeholder {
+  color: #6a7182;
+}
+
+.json-input:focus {
+  box-shadow: inset 0 0 0 1px #4e6d9a;
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0a0a0f;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.json-node {
+  position: relative;
+}
+
+.json-row {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  padding: 1.5px 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 13px;
+  line-height: 1.7;
+  transition: background 0.1s;
+}
+
+.json-row:hover {
+  background: rgba(90, 90, 240, 0.06);
+}
+
+.arrow {
+  font-size: 10px;
+  color: #fff;
+  width: 12px;
+  flex-shrink: 0;
+  user-select: none;
+  transition: color 0.1s;
+}
+
+.json-row:hover .arrow {
+  color: #7878c8;
+}
+
+.key {
+  color: #7eb8f7;
+}
+
+.colon {
+  color: #9595c4;
+}
+
+.bracket {
+  color: #b4b4db;
+}
+
+.comma {
+  color: #b4b4db;
+}
+
+.preview {
+  color: #3a3a5a;
+  font-style: italic;
+  margin: 0 2px;
+}
+
+/* Value types */
+.val-string {
+  color: #a8cc8c;
+}
+
+.val-number {
+  color: #e8a87c;
+}
+
+.val-boolean {
+  color: #d08af0;
+}
+
+.val-null {
+  color: #f07878;
+  font-style: italic;
+}
+
+.children {
+  border-left: 1px solid #1e1e2e;
+  margin-left: 6px;
+}
+
+.close-bracket {
+  padding-left: 4px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.collapsed-preview {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+}
